@@ -1,0 +1,160 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "from": [
+        841,
+        847
+      ],
+      "to": [
+        843,
+        432
+      ],
+      "sigma": 150,
+      "core": false
+    },
+    {
+      "name": "spine",
+      "parent": "root",
+      "from": [
+        843,
+        432
+      ],
+      "to": [
+        847,
+        234
+      ],
+      "sigma": 70,
+      "core": true
+    },
+    {
+      "name": "head",
+      "parent": "spine",
+      "from": [
+        847,
+        234
+      ],
+      "to": [
+        840,
+        106
+      ],
+      "sigma": 44,
+      "core": true
+    },
+    {
+      "name": "upperL",
+      "parent": "spine",
+      "from": [
+        788,
+        257
+      ],
+      "to": [
+        916,
+        294
+      ],
+      "sigma": 30,
+      "core": true
+    },
+    {
+      "name": "foreL",
+      "parent": "upperL",
+      "from": [
+        916,
+        294
+      ],
+      "to": [
+        1086,
+        285
+      ],
+      "sigma": 30,
+      "core": true
+    },
+    {
+      "name": "upperR",
+      "parent": "spine",
+      "from": [
+        904,
+        237
+      ],
+      "to": [
+        1006,
+        195
+      ],
+      "sigma": 30,
+      "core": true
+    },
+    {
+      "name": "foreR",
+      "parent": "upperR",
+      "from": [
+        1006,
+        195
+      ],
+      "to": [
+        1129,
+        118
+      ],
+      "sigma": 30,
+      "core": true
+    }
+  ],
+  "arms": {
+    "L": {
+      "upper": "upperL",
+      "fore": "foreL",
+      "shoulder": [
+        788,
+        257
+      ],
+      "elbow": [
+        916,
+        294
+      ],
+      "wrist": [
+        1043,
+        287
+      ],
+      "hold": [
+        1086,
+        285
+      ]
+    },
+    "R": {
+      "upper": "upperR",
+      "fore": "foreR",
+      "shoulder": [
+        904,
+        237
+      ],
+      "elbow": [
+        1006,
+        195
+      ],
+      "wrist": [
+        1094,
+        129
+      ],
+      "hold": [
+        1129,
+        118
+      ]
+    }
+  },
+  "head": {
+    "neck": [
+      847,
+      234
+    ],
+    "top": [
+      840,
+      106
+    ],
+    "r": 42
+  },
+  "figureBox": [
+    596,
+    57,
+    1172,
+    866
+  ]
+}

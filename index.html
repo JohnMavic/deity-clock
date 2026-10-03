@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de" translate="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Goddess</title>
+    <link rel="icon" href="data:," />
+    <style>html,body{cursor:none;background:#000;height:100%;margin:0;overflow:hidden}html.pointer,html.pointer body{cursor:default}</style>
+    <script>
+      // Bootstrap, independent of the app bundle (docs/PLAN.md §3.9):
+      // reloads when a new release is active and shows a plain fallback clock
+      // when the app does not report "started" (broken release, missing WebGL).
+      (function () {
+        var V = '20261003-105015-208f411';
+        // a static page (GitHub Pages) has no Pi server: its version file lies next to the page and
+        // the device clock counts as synchronised
+        var STATIC = 'true' === 'true';
+        var started = false;
+        var fb = null; // running fallback: { el, timers, stopped }
+        window.__GODDESS_VERSION__ = V;
+        // The app has rendered: remove a fallback clock completely (element, timers, frames).
+        window.__goddessStarted = function () {
+          started = true;
+          if (fb) {
+            fb.stopped = true;
+            fb.timers.forEach(clearInterval);
+            fb.el.remove();
+            fb = null;
+          }
+        };
+
+        setInterval(function () {
+          fetch(STATIC ? 'version.json' : '/version.json', { cache: 'no-store' })
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (j) { if (j && j.version && j.version !== V) location.reload(); })
+            .catch(function () {});
+        }, 10000);
+
+        function fallback(reason) {
+          if (started || fb) return;
+          var el = document.createElement('div');
+          var state = { el: el, timers: [], stopped: false };
+          fb = state;
+          el.id = 'fallback';
+          el.setAttribute('data-reason', reason || 'timeout');
+          el.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;' +
+            'color:rgb(190,190,190);font-family:"Palatino Linotype", "Book Antiqua", Palatino, P052, "URW Palladio L", serif;letter-spacing:.05em';
+          document.body.appendChild(el);
+          var fmt = new Intl.DateTimeFormat('de-CH', { timeZone: 'Europe/Zurich', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
+          var synced = STATIC ? true : null; // unknown until the first status answer
+          function tick() {
+            if (synced === null) return;
+            // Never claim a time the system clock does not know (docs/PLAN.md §2.5).
+            el.textContent = synced ? fmt.format(new Date()) : 'Zeit wird synchronisiert';
+            el.style.fontSize = synced ? '16vh' : '4vh';
+            el.style.fontStyle = synced ? 'normal' : 'italic';
+          }
+          function status() {
+            if (STATIC) return tick();
+            fetch('/status', { cache: 'no-store' })
+              .then(function (r) { return r.ok ? r.json() : null; })
+              .then(function (s) { if (s) { synced = !!s.ntpSynchronized; tick(); } })
+              .catch(function () {});
+          }
+          var frames = 0;
+          (function raf() { if (state.stopped) return; frames++; requestAnimationFrame(raf); })();
+          function beat() {
+            if (STATIC) return;
+            fetch('/heartbeat', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ version: V, frames: frames, mode: 'fallback' }) }).catch(function () {});
+          }
+          status();
+          beat();
+          state.timers.push(setInterval(status, 10000), setInterval(tick, 1000), setInterval(beat, 30000));
+        }
+        window.__goddessFallback = fallback;
+
+        // The wall shows no mouse pointer. A mouse that is moved (a browser tab on a PC) shows it
+        // until it rests for 3 s. Only a real move counts: a browser may report one without it.
+        var px = null, py = null, pointerT = 0;
+        addEventListener('pointermove', function (e) {
+          if (px !== null && (e.screenX !== px || e.screenY !== py)) {
+            document.documentElement.classList.add('pointer');
+            clearTimeout(pointerT);
+            pointerT = setTimeout(function () { document.documentElement.classList.remove('pointer'); }, 3000);
+          }
+          px = e.screenX;
+          py = e.screenY;
+        }, { passive: true });
+        setTimeout(function () { fallback('timeout'); }, 20000);
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/main-B3ycXpud.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-B0XyfRKN.css">
+  </head>
+  <body>
+    <canvas id="stage"></canvas>
+    <div id="clock"></div>
+    <div id="pattern" hidden></div>
+    <div id="debug" hidden></div>
+  </body>
+</html>

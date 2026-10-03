@@ -1,0 +1,83 @@
+{
+  "poses": [
+    "chronos",
+    "aion",
+    "athene",
+    "athene-fluegel",
+    "apollon",
+    "helios",
+    "artemis",
+    "waldgoettin",
+    "poseidon",
+    "poseidon-welle"
+  ],
+  "cycle": true,
+  "provenance": [
+    {
+      "id": "chronos",
+      "source": "ChatGPT Image Sep 30, 2026, 04_01_06 PM.png",
+      "sha256": "f3d340d1a2175d601ce343f99155ef175baca92a767a1857cf619633fa8434b5",
+      "volumes": 11
+    },
+    {
+      "id": "aion",
+      "source": "ChatGPT Image Sep 30, 2026, 04_03_31 PM.png",
+      "sha256": "d9cb2d4566e7476a75a3b527e7670bec61731e25908b9ad72d1db26f39f7f308",
+      "volumes": 13
+    },
+    {
+      "id": "athene",
+      "source": "ChatGPT Image Sep 30, 2026, 04_03_49 PM-2.png",
+      "sha256": "46b4da5aadfb1b800290d860e23d725d5f1ef965d96be6be63ad1a025df9874b",
+      "volumes": 13
+    },
+    {
+      "id": "athene-fluegel",
+      "source": "ChatGPT Image Sep 30, 2026, 04_03_50 PM-3.png",
+      "sha256": "1b7ecb604d13d992f0e10b563d33a98a24381715757b30b1d32fff4eec24e642",
+      "volumes": 14
+    },
+    {
+      "id": "apollon",
+      "source": "ChatGPT Image Sep 30, 2026, 04_03_50 PM-4.png",
+      "sha256": "7c31fbf5906c0e87b95f11e17640a7bb292860a3210c7525882eef23fb8c9f0e",
+      "volumes": 13
+    },
+    {
+      "id": "helios",
+      "source": "ChatGPT Image Sep 30, 2026, 04_03_51 PM-5.png",
+      "sha256": "c7f522cebfd548237faab197df13419b6b8d85bcd4a9ab5ccb26dade2329b9a7",
+      "volumes": 23
+    },
+    {
+      "id": "artemis",
+      "source": "ChatGPT Image Sep 30, 2026, 04_03_52 PM-6.png",
+      "sha256": "020ca773e65131fddd91c81c60b8ca1c69fadd78585780d9f78d6767e3417ab5",
+      "volumes": 22
+    },
+    {
+      "id": "waldgoettin",
+      "source": "ChatGPT Image Sep 30, 2026, 04_03_53 PM-7.png",
+      "sha256": "c7c85a9e805f4065c3215c5630579f67bf6f3790421ca4eaea11a1ef9eac47a8",
+      "volumes": 17
+    },
+    {
+      "id": "poseidon",
+      "source": "ChatGPT Image Sep 30, 2026, 04_03_53 PM-8.png",
+      "sha256": "ec68ce3fb87c27e43ce2e685022d061da1474f0db01b2b721cffe300f3136b4f",
+      "volumes": 21,
+      "derivation": {
+        "path": "design/deity-derived/poseidon-two-arms.png",
+        "sha256": "c61af1da112ce7bc9e98b53280f2a895b316b6c4a2c5daea866d4d8cb4af6499",
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "poseidon-welle",
+      "source": "ChatGPT Image Sep 30, 2026, 04_03_54 PM-9.png",
+      "sha256": "e534379bd80b06b77463952e235ad7c8463af26b56c780da3c78870908e590c8",
+      "volumes": 13
+    }
+  ]
+}

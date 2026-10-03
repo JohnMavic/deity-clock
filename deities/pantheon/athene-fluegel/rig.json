@@ -1,0 +1,385 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "to": [
+        810,
+        526
+      ],
+      "sigma": 130,
+      "core": false,
+      "from": [
+        810,
+        800
+      ]
+    },
+    {
+      "name": "spine",
+      "to": [
+        829,
+        305
+      ],
+      "sigma": 67,
+      "core": true,
+      "from": [
+        810,
+        526
+      ],
+      "parent": "root"
+    },
+    {
+      "name": "head",
+      "to": [
+        830,
+        189
+      ],
+      "sigma": 43,
+      "core": true,
+      "from": [
+        829,
+        305
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "upperL",
+      "to": [
+        619,
+        359
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        752,
+        324
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreL",
+      "to": [
+        395,
+        307
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        619,
+        359
+      ],
+      "parent": "upperL"
+    },
+    {
+      "name": "upperR",
+      "to": [
+        1061,
+        218
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        912,
+        299
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreR",
+      "to": [
+        1280,
+        115
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        1061,
+        218
+      ],
+      "parent": "upperR"
+    }
+  ],
+  "arms": {
+    "L": {
+      "upper": "upperL",
+      "fore": "foreL",
+      "shoulder": [
+        752,
+        324
+      ],
+      "elbow": [
+        619,
+        359
+      ],
+      "wrist": [
+        454,
+        325
+      ],
+      "hold": [
+        395,
+        307
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    },
+    "R": {
+      "upper": "upperR",
+      "fore": "foreR",
+      "shoulder": [
+        912,
+        299
+      ],
+      "elbow": [
+        1061,
+        218
+      ],
+      "wrist": [
+        1194,
+        148
+      ],
+      "hold": [
+        1280,
+        115
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    }
+  },
+  "head": {
+    "neck": [
+      829,
+      305
+    ],
+    "top": [
+      830,
+      189
+    ],
+    "r": 40
+  },
+  "figureBox": [
+    250,
+    35,
+    1430,
+    899
+  ],
+  "volumes": [
+    {
+      "name": "root",
+      "bone": "root",
+      "a": [
+        810,
+        800
+      ],
+      "b": [
+        810,
+        526
+      ],
+      "radius": 91.0,
+      "z": 0
+    },
+    {
+      "name": "spine",
+      "bone": "spine",
+      "a": [
+        810,
+        526
+      ],
+      "b": [
+        829,
+        305
+      ],
+      "radius": 46.9,
+      "z": 0
+    },
+    {
+      "name": "head",
+      "bone": "head",
+      "a": [
+        829,
+        305
+      ],
+      "b": [
+        830,
+        189
+      ],
+      "radius": 30.099999999999998,
+      "z": 0
+    },
+    {
+      "name": "upperL",
+      "bone": "upperL",
+      "a": [
+        752,
+        324
+      ],
+      "b": [
+        619,
+        359
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreL",
+      "bone": "foreL",
+      "a": [
+        619,
+        359
+      ],
+      "b": [
+        395,
+        307
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "upperR",
+      "bone": "upperR",
+      "a": [
+        912,
+        299
+      ],
+      "b": [
+        1061,
+        218
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreR",
+      "bone": "foreR",
+      "a": [
+        1061,
+        218
+      ],
+      "b": [
+        1280,
+        115
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "helmet",
+      "bone": "head",
+      "a": [
+        754,
+        159
+      ],
+      "b": [
+        786,
+        102
+      ],
+      "radius": 39,
+      "z": 0
+    },
+    {
+      "name": "wing-left-inner",
+      "bone": "spine",
+      "a": [
+        704,
+        481
+      ],
+      "b": [
+        561,
+        465
+      ],
+      "radius": 64,
+      "z": -12
+    },
+    {
+      "name": "wing-left-tip",
+      "bone": "spine",
+      "a": [
+        541,
+        450
+      ],
+      "b": [
+        430,
+        379
+      ],
+      "radius": 43,
+      "z": -12
+    },
+    {
+      "name": "wing-right-inner",
+      "bone": "spine",
+      "a": [
+        1006,
+        429
+      ],
+      "b": [
+        1175,
+        339
+      ],
+      "radius": 58,
+      "z": -12
+    },
+    {
+      "name": "wing-right-tip",
+      "bone": "spine",
+      "a": [
+        1231,
+        281
+      ],
+      "b": [
+        1287,
+        170
+      ],
+      "radius": 41,
+      "z": -12
+    },
+    {
+      "name": "talons",
+      "bone": "root",
+      "a": [
+        847,
+        721
+      ],
+      "b": [
+        877,
+        773
+      ],
+      "radius": 31,
+      "z": 0
+    },
+    {
+      "name": "tail",
+      "bone": "root",
+      "a": [
+        832,
+        665
+      ],
+      "b": [
+        847,
+        828
+      ],
+      "radius": 49,
+      "z": 0
+    }
+  ],
+  "paintedOrbs": [
+    [
+      412,
+      253
+    ],
+    [
+      1267,
+      78
+    ]
+  ],
+  "identity": "athene-fluegel"
+}

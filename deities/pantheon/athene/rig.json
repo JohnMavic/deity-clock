@@ -1,0 +1,371 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "to": [
+        822,
+        431
+      ],
+      "sigma": 130,
+      "core": false,
+      "from": [
+        822,
+        800
+      ]
+    },
+    {
+      "name": "spine",
+      "to": [
+        833,
+        210
+      ],
+      "sigma": 67,
+      "core": true,
+      "from": [
+        822,
+        431
+      ],
+      "parent": "root"
+    },
+    {
+      "name": "head",
+      "to": [
+        827,
+        110
+      ],
+      "sigma": 43,
+      "core": true,
+      "from": [
+        833,
+        210
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "upperL",
+      "to": [
+        666,
+        326
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        755,
+        238
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreL",
+      "to": [
+        551,
+        239
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        666,
+        326
+      ],
+      "parent": "upperL"
+    },
+    {
+      "name": "upperR",
+      "to": [
+        1037,
+        210
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        901,
+        217
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreR",
+      "to": [
+        1193,
+        119
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        1037,
+        210
+      ],
+      "parent": "upperR"
+    }
+  ],
+  "arms": {
+    "L": {
+      "upper": "upperL",
+      "fore": "foreL",
+      "shoulder": [
+        755,
+        238
+      ],
+      "elbow": [
+        666,
+        326
+      ],
+      "wrist": [
+        588,
+        260
+      ],
+      "hold": [
+        551,
+        239
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    },
+    "R": {
+      "upper": "upperR",
+      "fore": "foreR",
+      "shoulder": [
+        901,
+        217
+      ],
+      "elbow": [
+        1037,
+        210
+      ],
+      "wrist": [
+        1145,
+        139
+      ],
+      "hold": [
+        1193,
+        119
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    }
+  },
+  "head": {
+    "neck": [
+      833,
+      210
+    ],
+    "top": [
+      827,
+      110
+    ],
+    "r": 40
+  },
+  "figureBox": [
+    250,
+    35,
+    1430,
+    899
+  ],
+  "volumes": [
+    {
+      "name": "root",
+      "bone": "root",
+      "a": [
+        822,
+        800
+      ],
+      "b": [
+        822,
+        431
+      ],
+      "radius": 91.0,
+      "z": 0
+    },
+    {
+      "name": "spine",
+      "bone": "spine",
+      "a": [
+        822,
+        431
+      ],
+      "b": [
+        833,
+        210
+      ],
+      "radius": 46.9,
+      "z": 0
+    },
+    {
+      "name": "head",
+      "bone": "head",
+      "a": [
+        833,
+        210
+      ],
+      "b": [
+        827,
+        110
+      ],
+      "radius": 30.099999999999998,
+      "z": 0
+    },
+    {
+      "name": "upperL",
+      "bone": "upperL",
+      "a": [
+        755,
+        238
+      ],
+      "b": [
+        666,
+        326
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreL",
+      "bone": "foreL",
+      "a": [
+        666,
+        326
+      ],
+      "b": [
+        551,
+        239
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "upperR",
+      "bone": "upperR",
+      "a": [
+        901,
+        217
+      ],
+      "b": [
+        1037,
+        210
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreR",
+      "bone": "foreR",
+      "a": [
+        1037,
+        210
+      ],
+      "b": [
+        1193,
+        119
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "helmet",
+      "bone": "head",
+      "a": [
+        783,
+        147
+      ],
+      "b": [
+        801,
+        54
+      ],
+      "radius": 42,
+      "z": 0
+    },
+    {
+      "name": "spear",
+      "bone": "root",
+      "a": [
+        664,
+        56
+      ],
+      "b": [
+        742,
+        843
+      ],
+      "radius": 12,
+      "z": 0
+    },
+    {
+      "name": "owl-body",
+      "bone": "root",
+      "a": [
+        1104,
+        622
+      ],
+      "b": [
+        1151,
+        559
+      ],
+      "radius": 32,
+      "z": 0
+    },
+    {
+      "name": "owl-head",
+      "bone": "root",
+      "a": [
+        1153,
+        546
+      ],
+      "b": [
+        1154,
+        533
+      ],
+      "radius": 28,
+      "z": 0
+    },
+    {
+      "name": "attribute-arm",
+      "bone": "spine",
+      "a": [
+        681,
+        364
+      ],
+      "b": [
+        706,
+        470
+      ],
+      "radius": 20,
+      "z": 0
+    },
+    {
+      "name": "robe-right",
+      "bone": "root",
+      "a": [
+        939,
+        492
+      ],
+      "b": [
+        1004,
+        777
+      ],
+      "radius": 62,
+      "z": 0
+    }
+  ],
+  "paintedOrbs": [
+    [
+      568,
+      200
+    ],
+    [
+      1172,
+      70
+    ]
+  ],
+  "identity": "athene"
+}

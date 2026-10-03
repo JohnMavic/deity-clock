@@ -1,0 +1,502 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "to": [
+        822,
+        392
+      ],
+      "sigma": 130,
+      "core": false,
+      "from": [
+        822,
+        800
+      ]
+    },
+    {
+      "name": "spine",
+      "to": [
+        845,
+        224
+      ],
+      "sigma": 67,
+      "core": true,
+      "from": [
+        822,
+        392
+      ],
+      "parent": "root"
+    },
+    {
+      "name": "head",
+      "to": [
+        842,
+        125
+      ],
+      "sigma": 43,
+      "core": true,
+      "from": [
+        845,
+        224
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "upperL",
+      "to": [
+        635,
+        328
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        751,
+        253
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreL",
+      "to": [
+        508,
+        263
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        635,
+        328
+      ],
+      "parent": "upperL"
+    },
+    {
+      "name": "upperR",
+      "to": [
+        1041,
+        254
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        916,
+        207
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreR",
+      "to": [
+        1230,
+        142
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        1041,
+        254
+      ],
+      "parent": "upperR"
+    }
+  ],
+  "arms": {
+    "L": {
+      "upper": "upperL",
+      "fore": "foreL",
+      "shoulder": [
+        751,
+        253
+      ],
+      "elbow": [
+        635,
+        328
+      ],
+      "wrist": [
+        526,
+        280
+      ],
+      "hold": [
+        508,
+        263
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    },
+    "R": {
+      "upper": "upperR",
+      "fore": "foreR",
+      "shoulder": [
+        916,
+        207
+      ],
+      "elbow": [
+        1041,
+        254
+      ],
+      "wrist": [
+        1175,
+        172
+      ],
+      "hold": [
+        1230,
+        142
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    }
+  },
+  "head": {
+    "neck": [
+      845,
+      224
+    ],
+    "top": [
+      842,
+      125
+    ],
+    "r": 40
+  },
+  "figureBox": [
+    250,
+    35,
+    1430,
+    899
+  ],
+  "volumes": [
+    {
+      "name": "root",
+      "bone": "root",
+      "a": [
+        822,
+        800
+      ],
+      "b": [
+        822,
+        392
+      ],
+      "radius": 91.0,
+      "z": 0
+    },
+    {
+      "name": "spine",
+      "bone": "spine",
+      "a": [
+        822,
+        392
+      ],
+      "b": [
+        845,
+        224
+      ],
+      "radius": 46.9,
+      "z": 0
+    },
+    {
+      "name": "head",
+      "bone": "head",
+      "a": [
+        845,
+        224
+      ],
+      "b": [
+        842,
+        125
+      ],
+      "radius": 30.099999999999998,
+      "z": 0
+    },
+    {
+      "name": "upperL",
+      "bone": "upperL",
+      "a": [
+        751,
+        253
+      ],
+      "b": [
+        635,
+        328
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreL",
+      "bone": "foreL",
+      "a": [
+        635,
+        328
+      ],
+      "b": [
+        508,
+        263
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "upperR",
+      "bone": "upperR",
+      "a": [
+        916,
+        207
+      ],
+      "b": [
+        1041,
+        254
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreR",
+      "bone": "foreR",
+      "a": [
+        1041,
+        254
+      ],
+      "b": [
+        1230,
+        142
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "trident-shaft-upper",
+      "bone": "spine",
+      "a": [
+        480,
+        162
+      ],
+      "b": [
+        534,
+        356
+      ],
+      "radius": 19,
+      "z": 0
+    },
+    {
+      "name": "trident-shaft-middle",
+      "bone": "spine",
+      "a": [
+        534,
+        356
+      ],
+      "b": [
+        586,
+        560
+      ],
+      "radius": 18,
+      "z": 0
+    },
+    {
+      "name": "trident-shaft-lower",
+      "bone": "spine",
+      "a": [
+        586,
+        560
+      ],
+      "b": [
+        656,
+        775
+      ],
+      "radius": 16,
+      "z": 0
+    },
+    {
+      "name": "trident-left",
+      "bone": "spine",
+      "a": [
+        413,
+        64
+      ],
+      "b": [
+        433,
+        137
+      ],
+      "radius": 14,
+      "z": 0
+    },
+    {
+      "name": "trident-left-bend",
+      "bone": "spine",
+      "a": [
+        433,
+        137
+      ],
+      "b": [
+        456,
+        148
+      ],
+      "radius": 15,
+      "z": 0
+    },
+    {
+      "name": "trident-left-base",
+      "bone": "spine",
+      "a": [
+        456,
+        148
+      ],
+      "b": [
+        480,
+        170
+      ],
+      "radius": 12,
+      "z": 0
+    },
+    {
+      "name": "trident-middle",
+      "bone": "spine",
+      "a": [
+        434,
+        17
+      ],
+      "b": [
+        472,
+        136
+      ],
+      "radius": 13,
+      "z": 0
+    },
+    {
+      "name": "trident-middle-base",
+      "bone": "spine",
+      "a": [
+        472,
+        136
+      ],
+      "b": [
+        480,
+        170
+      ],
+      "radius": 10,
+      "z": 0
+    },
+    {
+      "name": "trident-right",
+      "bone": "spine",
+      "a": [
+        482,
+        50
+      ],
+      "b": [
+        503,
+        121
+      ],
+      "radius": 18,
+      "z": 0
+    },
+    {
+      "name": "trident-right-bend",
+      "bone": "spine",
+      "a": [
+        503,
+        121
+      ],
+      "b": [
+        495,
+        137
+      ],
+      "radius": 21,
+      "z": 0
+    },
+    {
+      "name": "trident-right-base",
+      "bone": "spine",
+      "a": [
+        495,
+        137
+      ],
+      "b": [
+        474,
+        151
+      ],
+      "radius": 10,
+      "z": 0
+    },
+    {
+      "name": "trident-collar",
+      "bone": "spine",
+      "a": [
+        478,
+        164
+      ],
+      "b": [
+        489,
+        194
+      ],
+      "radius": 15,
+      "z": 0
+    },
+    {
+      "name": "wave-left",
+      "bone": "root",
+      "a": [
+        429,
+        719
+      ],
+      "b": [
+        520,
+        779
+      ],
+      "radius": 37,
+      "z": 0
+    },
+    {
+      "name": "wave-right",
+      "bone": "root",
+      "a": [
+        1105,
+        678
+      ],
+      "b": [
+        1206,
+        761
+      ],
+      "radius": 41,
+      "z": 0
+    }
+  ],
+  "paintedOrbs": [
+    [
+      593,
+      188
+    ],
+    [
+      1191,
+      90
+    ]
+  ],
+  "identity": "poseidon",
+  "heldAttributes": [
+    {
+      "arm": "L",
+      "volumes": [
+        "trident-shaft-upper",
+        "trident-shaft-middle",
+        "trident-shaft-lower",
+        "trident-left",
+        "trident-left-bend",
+        "trident-left-base",
+        "trident-middle",
+        "trident-middle-base",
+        "trident-right",
+        "trident-right-bend",
+        "trident-right-base",
+        "trident-collar"
+      ]
+    }
+  ]
+}
