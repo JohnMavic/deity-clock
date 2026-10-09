@@ -1,0 +1,371 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "to": [
+        800,
+        465
+      ],
+      "sigma": 130,
+      "core": false,
+      "from": [
+        800,
+        800
+      ]
+    },
+    {
+      "name": "spine",
+      "to": [
+        815,
+        226
+      ],
+      "sigma": 67,
+      "core": true,
+      "from": [
+        800,
+        465
+      ],
+      "parent": "root"
+    },
+    {
+      "name": "head",
+      "to": [
+        810,
+        133
+      ],
+      "sigma": 43,
+      "core": true,
+      "from": [
+        815,
+        226
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "upperL",
+      "to": [
+        640,
+        335
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        729,
+        262
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreL",
+      "to": [
+        516,
+        242
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        640,
+        335
+      ],
+      "parent": "upperL"
+    },
+    {
+      "name": "upperR",
+      "to": [
+        1030,
+        214
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        881,
+        218
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreR",
+      "to": [
+        1194,
+        115
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        1030,
+        214
+      ],
+      "parent": "upperR"
+    }
+  ],
+  "arms": {
+    "L": {
+      "upper": "upperL",
+      "fore": "foreL",
+      "shoulder": [
+        729,
+        262
+      ],
+      "elbow": [
+        640,
+        335
+      ],
+      "wrist": [
+        550,
+        269
+      ],
+      "hold": [
+        516,
+        242
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    },
+    "R": {
+      "upper": "upperR",
+      "fore": "foreR",
+      "shoulder": [
+        881,
+        218
+      ],
+      "elbow": [
+        1030,
+        214
+      ],
+      "wrist": [
+        1138,
+        136
+      ],
+      "hold": [
+        1194,
+        115
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    }
+  },
+  "head": {
+    "neck": [
+      815,
+      226
+    ],
+    "top": [
+      810,
+      133
+    ],
+    "r": 40
+  },
+  "figureBox": [
+    250,
+    35,
+    1430,
+    899
+  ],
+  "volumes": [
+    {
+      "name": "root",
+      "bone": "root",
+      "a": [
+        800,
+        800
+      ],
+      "b": [
+        800,
+        465
+      ],
+      "radius": 91.0,
+      "z": 0
+    },
+    {
+      "name": "spine",
+      "bone": "spine",
+      "a": [
+        800,
+        465
+      ],
+      "b": [
+        815,
+        226
+      ],
+      "radius": 46.9,
+      "z": 0
+    },
+    {
+      "name": "head",
+      "bone": "head",
+      "a": [
+        815,
+        226
+      ],
+      "b": [
+        810,
+        133
+      ],
+      "radius": 30.099999999999998,
+      "z": 0
+    },
+    {
+      "name": "upperL",
+      "bone": "upperL",
+      "a": [
+        729,
+        262
+      ],
+      "b": [
+        640,
+        335
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreL",
+      "bone": "foreL",
+      "a": [
+        640,
+        335
+      ],
+      "b": [
+        516,
+        242
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "upperR",
+      "bone": "upperR",
+      "a": [
+        881,
+        218
+      ],
+      "b": [
+        1030,
+        214
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreR",
+      "bone": "foreR",
+      "a": [
+        1030,
+        214
+      ],
+      "b": [
+        1194,
+        115
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "lyre-left",
+      "bone": "spine",
+      "a": [
+        766,
+        288
+      ],
+      "b": [
+        737,
+        416
+      ],
+      "radius": 14,
+      "z": 0
+    },
+    {
+      "name": "lyre-right",
+      "bone": "spine",
+      "a": [
+        860,
+        304
+      ],
+      "b": [
+        849,
+        412
+      ],
+      "radius": 15,
+      "z": 0
+    },
+    {
+      "name": "lyre-base",
+      "bone": "spine",
+      "a": [
+        746,
+        419
+      ],
+      "b": [
+        833,
+        435
+      ],
+      "radius": 20,
+      "z": 0
+    },
+    {
+      "name": "attribute-arm",
+      "bone": "spine",
+      "a": [
+        685,
+        400
+      ],
+      "b": [
+        771,
+        438
+      ],
+      "radius": 21,
+      "z": 0
+    },
+    {
+      "name": "robe-left",
+      "bone": "root",
+      "a": [
+        703,
+        522
+      ],
+      "b": [
+        644,
+        794
+      ],
+      "radius": 60,
+      "z": 0
+    },
+    {
+      "name": "robe-right",
+      "bone": "root",
+      "a": [
+        912,
+        520
+      ],
+      "b": [
+        1011,
+        779
+      ],
+      "radius": 59,
+      "z": 0
+    }
+  ],
+  "paintedOrbs": [
+    [
+      528,
+      203
+    ],
+    [
+      1171,
+      70
+    ]
+  ],
+  "identity": "apollon"
+}

@@ -1,0 +1,371 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "to": [
+        811,
+        524
+      ],
+      "sigma": 130,
+      "core": false,
+      "from": [
+        811,
+        800
+      ]
+    },
+    {
+      "name": "spine",
+      "to": [
+        853,
+        305
+      ],
+      "sigma": 67,
+      "core": true,
+      "from": [
+        811,
+        524
+      ],
+      "parent": "root"
+    },
+    {
+      "name": "head",
+      "to": [
+        857,
+        211
+      ],
+      "sigma": 43,
+      "core": true,
+      "from": [
+        853,
+        305
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "upperL",
+      "to": [
+        609,
+        440
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        726,
+        360
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreL",
+      "to": [
+        459,
+        330
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        609,
+        440
+      ],
+      "parent": "upperL"
+    },
+    {
+      "name": "upperR",
+      "to": [
+        1021,
+        286
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        928,
+        292
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreR",
+      "to": [
+        1213,
+        145
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        1021,
+        286
+      ],
+      "parent": "upperR"
+    }
+  ],
+  "arms": {
+    "L": {
+      "upper": "upperL",
+      "fore": "foreL",
+      "shoulder": [
+        726,
+        360
+      ],
+      "elbow": [
+        609,
+        440
+      ],
+      "wrist": [
+        501,
+        350
+      ],
+      "hold": [
+        459,
+        330
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    },
+    "R": {
+      "upper": "upperR",
+      "fore": "foreR",
+      "shoulder": [
+        928,
+        292
+      ],
+      "elbow": [
+        1021,
+        286
+      ],
+      "wrist": [
+        1141,
+        177
+      ],
+      "hold": [
+        1213,
+        145
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    }
+  },
+  "head": {
+    "neck": [
+      853,
+      305
+    ],
+    "top": [
+      857,
+      211
+    ],
+    "r": 40
+  },
+  "figureBox": [
+    250,
+    35,
+    1430,
+    899
+  ],
+  "volumes": [
+    {
+      "name": "root",
+      "bone": "root",
+      "a": [
+        811,
+        800
+      ],
+      "b": [
+        811,
+        524
+      ],
+      "radius": 91.0,
+      "z": 0
+    },
+    {
+      "name": "spine",
+      "bone": "spine",
+      "a": [
+        811,
+        524
+      ],
+      "b": [
+        853,
+        305
+      ],
+      "radius": 46.9,
+      "z": 0
+    },
+    {
+      "name": "head",
+      "bone": "head",
+      "a": [
+        853,
+        305
+      ],
+      "b": [
+        857,
+        211
+      ],
+      "radius": 30.099999999999998,
+      "z": 0
+    },
+    {
+      "name": "upperL",
+      "bone": "upperL",
+      "a": [
+        726,
+        360
+      ],
+      "b": [
+        609,
+        440
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreL",
+      "bone": "foreL",
+      "a": [
+        609,
+        440
+      ],
+      "b": [
+        459,
+        330
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "upperR",
+      "bone": "upperR",
+      "a": [
+        928,
+        292
+      ],
+      "b": [
+        1021,
+        286
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreR",
+      "bone": "foreR",
+      "a": [
+        1021,
+        286
+      ],
+      "b": [
+        1213,
+        145
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "horse-body",
+      "bone": "root",
+      "a": [
+        795,
+        738
+      ],
+      "b": [
+        1036,
+        667
+      ],
+      "radius": 83,
+      "z": -12
+    },
+    {
+      "name": "horse-neck",
+      "bone": "root",
+      "a": [
+        1139,
+        626
+      ],
+      "b": [
+        1235,
+        494
+      ],
+      "radius": 64,
+      "z": -12
+    },
+    {
+      "name": "horse-head",
+      "bone": "root",
+      "a": [
+        1309,
+        450
+      ],
+      "b": [
+        1408,
+        571
+      ],
+      "radius": 46,
+      "z": -12
+    },
+    {
+      "name": "wave-left",
+      "bone": "root",
+      "a": [
+        343,
+        706
+      ],
+      "b": [
+        580,
+        763
+      ],
+      "radius": 66,
+      "z": 0
+    },
+    {
+      "name": "wave-bottom",
+      "bone": "root",
+      "a": [
+        619,
+        851
+      ],
+      "b": [
+        920,
+        818
+      ],
+      "radius": 45,
+      "z": 0
+    },
+    {
+      "name": "wave-right",
+      "bone": "root",
+      "a": [
+        1161,
+        802
+      ],
+      "b": [
+        1307,
+        858
+      ],
+      "radius": 46,
+      "z": 0
+    }
+  ],
+  "paintedOrbs": [
+    [
+      469,
+      282
+    ],
+    [
+      1205,
+      101
+    ]
+  ],
+  "identity": "poseidon-welle"
+}

@@ -1,0 +1,497 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "to": [
+        823,
+        393
+      ],
+      "sigma": 130,
+      "core": false,
+      "from": [
+        823,
+        800
+      ]
+    },
+    {
+      "name": "spine",
+      "to": [
+        846,
+        236
+      ],
+      "sigma": 67,
+      "core": true,
+      "from": [
+        823,
+        393
+      ],
+      "parent": "root"
+    },
+    {
+      "name": "head",
+      "to": [
+        848,
+        142
+      ],
+      "sigma": 43,
+      "core": true,
+      "from": [
+        846,
+        236
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "upperL",
+      "to": [
+        669,
+        333
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        767,
+        257
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreL",
+      "to": [
+        551,
+        222
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        669,
+        333
+      ],
+      "parent": "upperL"
+    },
+    {
+      "name": "upperR",
+      "to": [
+        1048,
+        191
+      ],
+      "sigma": 29,
+      "core": true,
+      "from": [
+        923,
+        226
+      ],
+      "parent": "spine"
+    },
+    {
+      "name": "foreR",
+      "to": [
+        1208,
+        112
+      ],
+      "sigma": 23,
+      "core": true,
+      "from": [
+        1048,
+        191
+      ],
+      "parent": "upperR"
+    }
+  ],
+  "arms": {
+    "L": {
+      "upper": "upperL",
+      "fore": "foreL",
+      "shoulder": [
+        767,
+        257
+      ],
+      "elbow": [
+        669,
+        333
+      ],
+      "wrist": [
+        587,
+        245
+      ],
+      "hold": [
+        551,
+        222
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    },
+    "R": {
+      "upper": "upperR",
+      "fore": "foreR",
+      "shoulder": [
+        923,
+        226
+      ],
+      "elbow": [
+        1048,
+        191
+      ],
+      "wrist": [
+        1152,
+        141
+      ],
+      "hold": [
+        1208,
+        112
+      ],
+      "upperWidth": [
+        24,
+        40
+      ],
+      "foreWidth": [
+        13,
+        28
+      ]
+    }
+  },
+  "head": {
+    "neck": [
+      846,
+      236
+    ],
+    "top": [
+      848,
+      142
+    ],
+    "r": 40
+  },
+  "figureBox": [
+    250,
+    35,
+    1430,
+    899
+  ],
+  "volumes": [
+    {
+      "name": "root",
+      "bone": "root",
+      "a": [
+        823,
+        800
+      ],
+      "b": [
+        823,
+        393
+      ],
+      "radius": 91.0,
+      "z": 0
+    },
+    {
+      "name": "spine",
+      "bone": "spine",
+      "a": [
+        823,
+        393
+      ],
+      "b": [
+        846,
+        236
+      ],
+      "radius": 46.9,
+      "z": 0
+    },
+    {
+      "name": "head",
+      "bone": "head",
+      "a": [
+        846,
+        236
+      ],
+      "b": [
+        848,
+        142
+      ],
+      "radius": 30.099999999999998,
+      "z": 0
+    },
+    {
+      "name": "upperL",
+      "bone": "upperL",
+      "a": [
+        767,
+        257
+      ],
+      "b": [
+        669,
+        333
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreL",
+      "bone": "foreL",
+      "a": [
+        669,
+        333
+      ],
+      "b": [
+        551,
+        222
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "upperR",
+      "bone": "upperR",
+      "a": [
+        923,
+        226
+      ],
+      "b": [
+        1048,
+        191
+      ],
+      "radius": 15.950000000000001,
+      "z": 0
+    },
+    {
+      "name": "foreR",
+      "bone": "foreR",
+      "a": [
+        1048,
+        191
+      ],
+      "b": [
+        1208,
+        112
+      ],
+      "radius": 12.65,
+      "z": 0
+    },
+    {
+      "name": "deer-body",
+      "bone": "root",
+      "a": [
+        451,
+        639
+      ],
+      "b": [
+        580,
+        632
+      ],
+      "radius": 49,
+      "z": -12
+    },
+    {
+      "name": "deer-neck",
+      "bone": "root",
+      "a": [
+        589,
+        604
+      ],
+      "b": [
+        608,
+        508
+      ],
+      "radius": 31,
+      "z": -12
+    },
+    {
+      "name": "deer-head",
+      "bone": "root",
+      "a": [
+        584,
+        494
+      ],
+      "b": [
+        646,
+        493
+      ],
+      "radius": 23,
+      "z": -12
+    },
+    {
+      "name": "deer-antlers-left",
+      "bone": "root",
+      "a": [
+        575,
+        470
+      ],
+      "b": [
+        495,
+        403
+      ],
+      "radius": 17,
+      "z": -12
+    },
+    {
+      "name": "deer-antlers-right",
+      "bone": "root",
+      "a": [
+        620,
+        468
+      ],
+      "b": [
+        624,
+        407
+      ],
+      "radius": 14,
+      "z": -12
+    },
+    {
+      "name": "deer-frontlegs",
+      "bone": "root",
+      "a": [
+        594,
+        675
+      ],
+      "b": [
+        621,
+        808
+      ],
+      "radius": 15,
+      "z": -12
+    },
+    {
+      "name": "deer-hindlegs",
+      "bone": "root",
+      "a": [
+        454,
+        680
+      ],
+      "b": [
+        432,
+        808
+      ],
+      "radius": 15,
+      "z": -12
+    },
+    {
+      "name": "wolf1-body",
+      "bone": "root",
+      "a": [
+        1048,
+        803
+      ],
+      "b": [
+        1138,
+        747
+      ],
+      "radius": 36,
+      "z": -12
+    },
+    {
+      "name": "wolf1-neck",
+      "bone": "root",
+      "a": [
+        1142,
+        724
+      ],
+      "b": [
+        1164,
+        672
+      ],
+      "radius": 26,
+      "z": -12
+    },
+    {
+      "name": "wolf1-head",
+      "bone": "root",
+      "a": [
+        1165,
+        669
+      ],
+      "b": [
+        1191,
+        634
+      ],
+      "radius": 18,
+      "z": -12
+    },
+    {
+      "name": "wolf2-body",
+      "bone": "root",
+      "a": [
+        1208,
+        812
+      ],
+      "b": [
+        1248,
+        780
+      ],
+      "radius": 29,
+      "z": -12
+    },
+    {
+      "name": "wolf2-head",
+      "bone": "root",
+      "a": [
+        1252,
+        760
+      ],
+      "b": [
+        1271,
+        713
+      ],
+      "radius": 20,
+      "z": -12
+    },
+    {
+      "name": "bow",
+      "bone": "spine",
+      "a": [
+        1003,
+        413
+      ],
+      "b": [
+        1054,
+        293
+      ],
+      "radius": 15,
+      "z": 0
+    },
+    {
+      "name": "moon",
+      "bone": "head",
+      "a": [
+        812,
+        85
+      ],
+      "b": [
+        840,
+        104
+      ],
+      "radius": 18,
+      "z": 0
+    },
+    {
+      "name": "quiver",
+      "bone": "spine",
+      "a": [
+        698,
+        218
+      ],
+      "b": [
+        747,
+        344
+      ],
+      "radius": 23,
+      "z": 0
+    }
+  ],
+  "paintedOrbs": [
+    [
+      567,
+      183
+    ],
+    [
+      1174,
+      71
+    ]
+  ],
+  "identity": "artemis"
+}
